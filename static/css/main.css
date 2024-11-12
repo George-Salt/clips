@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Loos Ext";
+  src:
+    url("../font/Loos/extended/regular.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Loos Ext Black";
+  src:
+    url("../font/Loos/extended/black.otf");
+  font-weight: 900;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  overflow: hidden;
+  font-family: "Loos Ext", sans-serif;
+  background: #101010;
+  color: white;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+main .video {
+  object-fit: cover;
+  height: calc(100vh - 35px - 45px);
+  max-width: calc(100vw - 20px);
+  border-radius: 15px;
+}
+
+main .details {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+main .details .name {
+  font-size: 18px;
+}
+
+main .details .author {
+  font-size: 13px;
+  color: gray;
+}
+
+main .details .download {
+  font-size: 25px;
+  text-decoration: none;
+  background: #1f1f1f;
+  color: mediumpurple;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
